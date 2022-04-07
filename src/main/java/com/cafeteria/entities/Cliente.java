@@ -36,7 +36,6 @@ public class Cliente implements Serializable{
 	
 	private Date dt_cadastro;
 	
-	@JsonIgnore
 	@OneToMany(mappedBy = "cliente")
 	private List<Venda> vendas = new ArrayList<>();
 
